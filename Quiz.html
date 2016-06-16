@@ -1,32 +1,51 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 </head>
     <body>
     
-        <h1> Quiz</h1>
+        <div class="container">
+            
+        <img src="quiz-night-800x400.jpg"/>
+            
+        <div class="row">
+            
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-6">
+            
+        <p id="q1" class="lead"></p>
+        <blockquote><ol id="list1" type = "A"></ol></blockquote>
+        <strong> Answer : </strong> <input id="ans1" />
         
-        <p id="q1"></p>
-        <ol id="list1" type = "A"></ol>
-        Answer : <input id="ans1"/>
+        <br><br>
+        <p id="q2" class="lead"></p>
+        <blockquote><ol id="list2" type = "A"></ol></blockquote>
+        <strong> Answer : </strong><input id="ans2"/>
         
-        <p id="q2"></p>
-        <ol id="list2" type = "A"></ol>
-        Answer : <input id="ans2"/>
-        
-        <p id="q3"></p>
-        <ol id="list3" type = "A"></ol>
-        Answer : <input id="ans3"/>
+        <br><br>
+        <p id="q3" class="lead"></p>
+        <blockquote><ol id="list3" type = "A"></ol></blockquote>
+        <strong> Answer : </strong><input id="ans3"/>
         
         <div id="demo">
-        <button id="finish"> Finish</button>
+            <br>
+        <button id="finish" class="btn btn-success btn-lg"> Finish</button>
+        <br> <br>
+         </div>
+        
+        <div id="result" class="lead"></div><br><br><br><br><br>
+        </div>
+        </div>
         
         </div>
         
-        <div id="result"></div>
-        
-        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="Quizjs.js"></script>
     </body>
 </html>

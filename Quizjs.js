@@ -59,6 +59,6 @@ function finishquiz()
             y++;
             }
         }
-    document.getElementById("result").innerHTML = y;
+    document.getElementById("result").innerHTML = "Your Score is : " + y;
     
 }
