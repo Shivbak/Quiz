@@ -6,14 +6,11 @@ function quiz(text,answer1,answer2,answer3,answer4,correctans)
     this.answer3 = answer3;
     this.answer4 = answer4;
     this.correctans = correctans;
-    /*this.method = function()
-    {
-        return this.text + '<br>' + '<br>' + this.answer1 +'<br>' + this.answer2 +'<br>' +this.answer3 +'<br>' +this.answer4 +'<br>' ;
-    }*/
+    
 }
 
 var question1 = new quiz("What is 20% of 40?","Eight","Nine","Seven","Ten","A");
-//document.getElementById("demo").innerHTML = question1.method();
+
 
 var question2 = new quiz("How much is three cubed?","9","27","16","21","B");
 
