@@ -8,9 +8,9 @@ function quiz(text,answer1,answer2,answer3,answer4,correctans)
     this.correctans = correctans;
     
 }
+ // objects for the quiz function
 
 var question1 = new quiz("What is 20% of 40?","Eight","Nine","Seven","Ten","A");
-
 
 var question2 = new quiz("How much is three cubed?","9","27","16","21","B");
 
@@ -18,12 +18,17 @@ var question3 = new quiz("How many consonants are there in the English alphabet?
 
 var Question = [];
 
+// pushing value in array
+
 Question.push(question1);
 Question.push(question2);
 Question.push(question3);
 
- var tagtext = ["q1","q2","q3"];
+// array of id of html file <p> and <list>
+var tagtext = ["q1","q2","q3"];
 var taglist = ["list1","list2","list3"];
+
+// displaying question and answer on DOM 
 
 for(var i =0 ;i<Question.length;i++)
     {
@@ -34,10 +39,12 @@ for(var i =0 ;i<Question.length;i++)
                                                         '<li>' + Question[i].answer4 + '</li>';
     }
 
+// adding event to finish quiz button
 
 var event = document.getElementById("finish");
     event.addEventListener('click',finishquiz,false);
 
+// finish quiz function to generate answer
 
 function finishquiz()
 {
@@ -59,6 +66,6 @@ function finishquiz()
             y++;
             }
         }
-    document.getElementById("result").innerHTML = y;
+    document.getElementById("result").innerHTML = "Your Score is : " + y;
     
 }
